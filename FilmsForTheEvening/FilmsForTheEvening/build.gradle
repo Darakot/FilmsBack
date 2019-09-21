@@ -1,0 +1,37 @@
+plugins {
+	id 'org.springframework.boot' version '2.1.8.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+	id 'java'
+}
+
+group = 'com.geekbrains'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+configurations {
+	developmentOnly
+	runtimeClasspath {
+		extendsFrom developmentOnly
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	//Работа с базами данных
+	compile('org.springframework.boot:spring-boot-starter-data-jpa')
+	compile('javax.xml.bind:jaxb-api')
+
+	// Подключаем MySQL
+	compile 'mysql:mysql-connector-java'
+	/*Фреймворк для того, что бы писать меньше кода ссылка на урок
+	https://www.youtube.com/watch?v=QmsMWCIf3nc&list=PLU2ftbIeotGpAYRP9Iv2KLIwK36-o_qYk&index=23*/
+	compile('org.projectlombok:lombok')
+}

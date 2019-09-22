@@ -22,17 +22,13 @@ public class UserController {
     }
 
 
-    @GetMapping ("/")
+    @GetMapping ("/getUsers")
     public List<User> getUsers(){
         return userDetailRepo.findAll();
     }
 
     @PostMapping("/createUser")  // создание юзера
     public User createUser(@RequestBody User user){
-//        if(user.getNickname() == userDetailRepo.findByNickname(user.getNickname()).getNickname()) {
-//
-//        }
-
         return userDetailRepo.save(user);
     }
 

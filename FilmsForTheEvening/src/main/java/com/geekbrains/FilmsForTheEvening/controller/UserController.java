@@ -17,8 +17,8 @@ import java.util.List;
  * Удалить созданного юезера
  */
 
-@RestController
-@RequestMapping("/users")
+@RestController("/users")
+//@RequestMapping("/users")
 public class UserController {
 
     private final UserDetailRepo userDetailRepo;
@@ -34,7 +34,12 @@ public class UserController {
         return userDetailRepo.findAll();
     }
 
-    @PutMapping("/createUser")  // создание юзера
+    @GetMapping("/getPass/{nickname}")
+    public User getPass (@PathVariable("nickname") String nickname){
+        return userDetailRepo.findByNickname(nickname);
+    }
+
+    @PostMapping("/createUser")  // создание юзера
     public User createUser(@RequestBody User user, HttpServletResponse response) {
         if (userDetailRepo.findByNickname(user.getNickname()) != null) {
             response.setStatus(410);
@@ -45,8 +50,8 @@ public class UserController {
         }
     }
 
-    @PostMapping("/edit/{nickname}") // обновление методом post по никнейму
-    public User updateUsr(
+    @PutMapping("/edit/{nickname}") // обновление методом post по никнейму
+    public User updateUser(
             @PathVariable("nickname") String nickname,
             @RequestBody User updateUsr) {
         User userFromDb = userDetailRepo.findByNickname(nickname); // находим юзера по нику
@@ -57,7 +62,7 @@ public class UserController {
     }
 
     @DeleteMapping("/delete/{nickname}")
-    public void deleteUsr(@PathVariable("nickname") String deleteUsr) {
+    public void deleteUser(@PathVariable("nickname") String deleteUsr) {
         userDetailRepo.deleteByNickname(deleteUsr);
     }
 

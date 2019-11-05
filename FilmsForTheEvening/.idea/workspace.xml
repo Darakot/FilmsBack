@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0bd7ed08-f4a2-48bc-a1d0-e5ed68d7a5b0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrains/FilmsForTheEvening/controller/ChoiceUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrains/FilmsForTheEvening/controller/ChoiceUserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrains/FilmsForTheEvening/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrains/FilmsForTheEvening/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrains/FilmsForTheEvening/domain/ChoiceUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrains/FilmsForTheEvening/domain/ChoiceUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrains/FilmsForTheEvening/domain/FilmsUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrains/FilmsForTheEvening/domain/FilmsUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrains/FilmsForTheEvening/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrains/FilmsForTheEvening/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrains/FilmsForTheEvening/repository/ChoiceUserDetailRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrains/FilmsForTheEvening/repository/ChoiceUserDetailRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrains/FilmsForTheEvening/exception/NotFoundExceprion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrains/FilmsForTheEvening/exception/NotFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrains/FilmsForTheEvening/repository/UserDetailRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrains/FilmsForTheEvening/repository/UserDetailRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +36,7 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="FilmsForTheEvening" type="f1a62948:ProjectNode" />
-                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
             </expand>
             <select />
@@ -70,17 +66,33 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA&#10;HTTP Request" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://google.com" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -94,7 +106,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Java Scratch.Scratch">
+    <configuration name="scratch#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/scratch.http">
+      <method v="2" />
+    </configuration>
+    <configuration name="scratch#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/scratch.http" index="2">
+      <method v="2" />
+    </configuration>
+    <configuration name="Scratch" type="Java Scratch" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Scratch" />
+      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FilmsForTheEveningApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="FilmsForTheEvening.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.geekbrains.FilmsForTheEvening.FilmsForTheEveningApplication" />
@@ -102,6 +127,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Java Scratch.Scratch" />
+        <item itemvalue="HTTP Request.scratch#2" />
+        <item itemvalue="HTTP Request.scratch#1" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="allServicesViewState">
@@ -127,8 +159,22 @@
       <workItem from="1571210197018" duration="38000" />
       <workItem from="1571210285723" duration="28000" />
       <workItem from="1571210389642" duration="864000" />
-      <workItem from="1571211268768" duration="6170000" />
+      <workItem from="1571211268768" duration="11613000" />
+      <workItem from="1571396154145" duration="17358000" />
+      <workItem from="1572035376475" duration="2541000" />
+      <workItem from="1572189334923" duration="7202000" />
+      <workItem from="1572595935826" duration="81000" />
+      <workItem from="1572596078986" duration="1814000" />
+      <workItem from="1572891515232" duration="1271000" />
     </task>
+    <task id="LOCAL-00001" summary="Add UserChoiceCtrl and UserChoice">
+      <created>1571219411453</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1571219411453</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +211,8 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/../.." />
     </ignored-roots>
+    <MESSAGE value="Add UserChoiceCtrl and UserChoice" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add UserChoiceCtrl and UserChoice" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

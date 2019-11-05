@@ -3,8 +3,13 @@ package com.geekbrains.FilmsForTheEvening.controller;
 import com.geekbrains.FilmsForTheEvening.domain.ChoiceUser;
 import com.geekbrains.FilmsForTheEvening.repository.ChoiceUserDetailRepo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.client.RestTemplate;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.List;
 
 /**
@@ -19,6 +24,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/choiceUser")
 public class ChoiceUserController {
+    //Вынести вызовы репозитория в *Service класс
     private final ChoiceUserDetailRepo choiceUserDetailRepo;
 
     @Autowired
@@ -26,7 +32,7 @@ public class ChoiceUserController {
         this.choiceUserDetailRepo = choiceUserDetailRepo;
     }
 
-    @PutMapping("/addChoice")
+    @PostMapping("/addChoice")
     public ChoiceUser addChoice(@RequestBody ChoiceUser choiceUser) {
         return choiceUserDetailRepo.save(choiceUser);
     }
@@ -51,8 +57,10 @@ public class ChoiceUserController {
         return choiceUserDetailRepo.findByWatchedWhereUser(user);
     }
 
+
+    //Не возвращать Entity, мапить его в DTO(Data transfer object)
     @GetMapping("/getfilms")
-    public List<ChoiceUser> getfilms() {
+    public List<ChoiceUser> getFilms() {
         return choiceUserDetailRepo.findAll();
     }
 
